@@ -1,0 +1,11 @@
+langchain
+langchain-google-genai
+langchain-community
+gradio
+faiss-cpu
+python-dotenv
+PyMuPDF
+easyocr
+torch
+torchvision
+Pillow
