@@ -40,7 +40,7 @@ retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 10, 
 print("Vector store and retriever are ready.")
 
 # --- 3. Setup LLM and RAG Chain (No changes from here) ---
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.25, google_api_key=api_key) # I updated to 1.5 Flash as it's newer
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.25, google_api_key=api_key) 
 
 contextualize_q_prompt = ChatPromptTemplate.from_messages([
     ("system", "Given a chat history and the latest user question, formulate a standalone question that can be understood without the chat history. Do NOT answer the question, just reformulate it."),
